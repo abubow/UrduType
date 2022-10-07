@@ -1,7 +1,7 @@
 import './App.css';
-import Clock from './Componants/Clock';
+import Clock from './Components/Clock';
 import { useState, useEffect, useRef } from 'react';
-import Display from './Componants/Display';
+import Display from './Components/Display';
 
 function App() {
     const [ hasWon, setHasWon ] = useState ( false );
