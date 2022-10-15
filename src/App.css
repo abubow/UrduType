@@ -37,12 +37,14 @@
   height: 40vh;
   display: flex;
   flex-direction: row;
+  justify-content: flex-start;
   flex-wrap: wrap;
   box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
   overflow: hidden;
   padding: 1rem 4rem;
   border-radius: 1rem;
   margin: 1rem;
+  border: 1px solid rgba(0,0,0,0.5);
 }
 .word{
   font-size: 3rem;
@@ -56,13 +58,7 @@
 }
 
 .letter-wrong{
-  font-size: 3rem;
   color: red;
-  background: transparent;
-  border: none;
-  outline: none;
-  margin-right: 1px;
-  flex:1;
 }
 
 .letter-typed{
@@ -77,7 +73,7 @@
   top: 20%;
   left: 10%;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   width: 80vw;
   padding: 1rem;
@@ -88,13 +84,29 @@
   padding-right: 1rem;
 }
 
+.stats{
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,0.5);
+  min-width: 50rem;
+}
 button{
   font-size: 1.5rem;
   color: whitesmoke;
   background: transparent;
   outline: none;
   margin-right: 2rem;
-  flex:1;
-  max-width: 10vw;
-
+  min-width: 10vw;
+  max-width: 20vw;
+  border: 1px solid whitesmoke;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  background: rgba(0,0,0,0.2);
+  backdrop-filter: blur(10px);
 }
